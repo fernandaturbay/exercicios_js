@@ -1,0 +1,37 @@
+<script>
+//Orientações do instrutor da Alura
+function pulaLinha () {
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+//Começo do código
+
+// Arredondamento decimal
+    function mediaProdutos(preco1, preco2) {
+        var mediaProdutos = (preco2 - preco1);
+        const formatado = mediaProdutos.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+        return formatado;
+    }
+    var tomate = mediaProdutos(3.30,  4.70);
+    var arroz = mediaProdutos(2.99, 3.25);
+    var cenoura = mediaProdutos(3.99, 4.14);
+
+    mostra("A inflação do tomate entre os dias 24 e 30/04 foi de " + tomate + ".");
+    mostra("A inflação do arroz entre os dias 24 e 30/04 foi de " + arroz + ".");
+    mostra("A inflação da cenoura entre os dias 24 e 30/04 foi de " + cenoura + ".");
+    pulaLinha();
+
+    function variacaoMedia (preco1, preco2, preco3) {
+        var variacaoMedia = ((preco1 + preco2 + preco3) /3);
+        const formatado = variacaoMedia.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+        return formatado;
+    }
+
+    var tomate = mediaProdutos
+
+</script>
