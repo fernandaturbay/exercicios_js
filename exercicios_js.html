@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios JS</title>
+</head>
+<body>
+    <script>
+        //Recomendação do Instrutor da Alura
+        function pulaLinha () {
+            document.write("<br>");
+        }
+        
+        //Começa aqui o código
+        // A vidente
+        var nome = " Fernanda ";
+        var filhos = " nenhum filho ";
+        var cidade = " Londres ";
+        var profissao = " Desenvolvedor Web ou Product Owner ";
+
+        document.write (" A vidente prevê: " + nome);
+        document.write (" terá " + filhos);
+        document.write (" e viverá em " + cidade);
+        document.write (" trabalhando como " + profissao);
+
+        pulaLinha();
+        pulaLinha();
+
+        // Ilha Deserta
+
+        var item1 = " Canivete suíço grande ";
+        var item2 = " Livro ";
+        var item3 = " Pedaço de couro grande com uma tira para amarrar";
+
+        document.write (" Eu levaria para uma ilha deserta: ");
+
+        pulaLinha();
+
+        document.write ("<li>" + item1 + "</li>")
+        document.write ("<li>" + item2 + "</li>")
+        document.write ("<li>" + item3 + "</li>")
+
+        pulaLinha();
+
+        // Animal
+
+        function escolhaAnimal (animal) {
+            document.write (animal);
+        }
+
+        var animal = " camaleoa ";
+        document.write (" Num primeiro momento, eu gostaria de ser uma: " + animal)
+        pulaLinha();
+
+        var animal = " baleia azul ";
+        document.write ("Pensando melhor, prefiro ser uma: " + animal)
+        pulaLinha();
+        pulaLinha();
+
+        //Tarefa dobro, metade, saudação
+
+        function dobro (numero) {
+            var resultadoDobro = (numero*2)
+            document.write ("O dobro de " + numero + " é " + resultadoDobro);
+            pulaLinha();
+
+        }
+            var numero = dobro(4)
+
+        function metade (numero) {
+            var resultadoMetade = (numero/2)
+            document.write ("A metade de " + numero + " é " + resultadoMetade);
+            pulaLinha();
+        }
+
+            var numero = metade(10)
+
+        function saudacao (nome) {
+            document.write ("Olá, " + nome + "! " + "Tudo bem?");
+            pulaLinha();
+        }
+            var nome = saudacao("Resiliente")
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+body{
+    background-color: violet;
+}
+
+header{
+    text-align: center;
+}
+.botoes {
+    display: flex;
+    flex-flow: column;
+    padding: 30px 600px;
+
+}

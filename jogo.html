@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo Coronga</title>
+</head>
+<body>
+    <script>
+        alert("Tu acorda no mundo de coronga");
+
+       var condicao = prompt("Sai de casa?\n1-sim\n2-não");
+
+        function recarrega () {
+            document.location.reload(true);
+        }
+
+        if (condicao == "1" ) 
+        {
+            alert("Você foi corongado e morreu")
+            recarrega();
+        } 
+        else if ( condicao == "2" ) 
+        {
+            alert ("Vai pro PC e aprende a programar.")
+            var condicao2 = prompt ("Fez projetos e exercícios?\n1-sim\n2-não")
+            if (condicao2 == "1") 
+            {
+                alert ("Criou portfólio, fez case de entrevista e passou! :D")
+            }
+            else if (condicao2 == "2") 
+            {
+                alert ("Não conseguiu fazer case das entrevistas!")
+                recarrega();
+            }
+            else 
+            {
+                alert ("Comando Inválido!")
+                recarrega();
+            }
+        }
+        else 
+        {
+            alert ("Comando Inválido!")
+            recarrega();
+        }
+        
+
+
+
+
+
+
+    </script>
+</body>
+</html>

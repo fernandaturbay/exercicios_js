@@ -1,0 +1,79 @@
+<script>
+//Orientações do instrutor da Alura
+function pulaLinha () {
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+//Começo do código
+
+// Arredondamento decimal
+    function mediaProdutos(preco1, preco2) {
+        var mediaProdutos = (preco2 - preco1);
+        const formatado = mediaProdutos.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+        return formatado;
+    }
+    var tomate = mediaProdutos(3.30,  4.70);
+    var arroz = mediaProdutos(2.99, 3.25);
+    var cenoura = mediaProdutos(3.99, 4.14);
+
+    mostra("A inflação do tomate entre os dias 24 e 30/04 foi de " + tomate + ".");
+    mostra("A inflação do arroz entre os dias 24 e 30/04 foi de " + arroz + ".");
+    mostra("A inflação da cenoura entre os dias 24 e 30/04 foi de " + cenoura + ".");
+    pulaLinha();
+
+    //não consegui pensar o cálculo matemático
+
+    //function variacaoMedia (preco1, preco2, preco3) {
+        //var variacaoMedia = ((preco1 + preco2 + preco3) /3);
+        //const formatado = variacaoMedia.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+        //return formatado;
+    //}
+
+    //var tomate = mediaProdutos
+
+    //Laranjas e Joselito - divisão
+
+    function distribuiLaranjas(quantidadeLaranjas, quantidadeVizinhos )
+    {
+        var laranjasPorVizinho = quantidadeLaranjas /quantidadeVizinhos
+        return Math.trunc( laranjasPorVizinho );
+    }
+    mostra("A quantidade de laranjas por vizinhos é de: " + distribuiLaranjas(18,8) + "<br>");
+
+    //Laranjas e Joselito - sobra
+
+    function sobraLaranjas (quantidadeLaranjas, quantidadeVizinhos)
+    {
+        var sobraDasLaranjas = quantidadeLaranjas % quantidadeVizinhos
+        return Math.trunc( sobraDasLaranjas );
+    }
+    mostra("A sobra de laranjas é de: " + sobraLaranjas(18,8));
+
+    //Pizzaria Resilia - Não deu certo minha lógica.
+
+    //function calculaImposto (entraValorPizza, imposto)
+    //{
+        //var calculaImposto = (entraValorPizza * 8.9) / 100
+        //return calculaImposto
+    //}
+
+    //function calculaLucro (entraCustoPizza, entraValorPizza, imposto)
+    //{
+        //var calculaLucro = entraValorPizza - (entraCustoPizza - calculaImposto)
+        //return calculaLucro
+    //}
+
+    //var entraCustoPizza = parseInt(prompt ("Insira o custo da pizza produzida:"));
+    //var entraValorPizza = parseInt(prompt ("Insira o valor de venda da pizza:"));
+    //var entraNomePizza = prompt ("Insira qual o nome da Pizza:");
+    //var imposto = 8.9;
+
+    //mostra(" Para a pizza " + entraNomePizza + " o lucro líquido é de R$ " + calculaLucro + " e o imposto é de " + calculaImposto);
+        
+        mostra("Não consegui fazer a calculadora da Pizzaria Resilia funcionar! :(")
+</script>
