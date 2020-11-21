@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body{
     background-color: violet;
 }
@@ -10,4 +11,18 @@ header{
     flex-flow: column;
     padding: 30px 600px;
 
+=======
+body{
+    background-color: violet;
+}
+
+header{
+    text-align: center;
+}
+.botoes {
+    display: flex;
+    flex-flow: column;
+    padding: 30px 600px;
+
+>>>>>>> 1ed723320e9b9d79b103d7291e77901b0b3e04f8
 }
