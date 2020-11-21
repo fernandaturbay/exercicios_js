@@ -26,6 +26,12 @@ function pulaLinha () {
     mostra("A inflação da cenoura entre os dias 24 e 30/04 foi de " + cenoura + ".");
     pulaLinha();
 
+    //- A inflação de cada um dos alimentos no período
+
+    //- A inflação média no período (leva em conta todos)
+
+    // A estimativa diária de inflação para cada um dos alimentos
+
     //não consegui pensar o cálculo matemático
 
     //function variacaoMedia (preco1, preco2, preco3) {
@@ -54,26 +60,20 @@ function pulaLinha () {
     }
     mostra("A sobra de laranjas é de: " + sobraLaranjas(18,8));
 
-    //Pizzaria Resilia - Não deu certo minha lógica.
+    //Pizzaria Resilia
 
-    //function calculaImposto (entraValorPizza, imposto)
-    //{
-        //var calculaImposto = (entraValorPizza * 8.9) / 100
-        //return calculaImposto
-    //}
+    var entraCustoPizza = parseInt(prompt ("Insira o custo da pizza produzida:"));
+    var entraValorPizza = parseInt(prompt ("Insira o valor de venda da pizza:"));
+    var entraNomePizza = prompt ("Insira qual o nome da Pizza:");
 
-    //function calculaLucro (entraCustoPizza, entraValorPizza, imposto)
-    //{
-        //var calculaLucro = entraValorPizza - (entraCustoPizza - calculaImposto)
-        //return calculaLucro
-    //}
 
-    //var entraCustoPizza = parseInt(prompt ("Insira o custo da pizza produzida:"));
-    //var entraValorPizza = parseInt(prompt ("Insira o valor de venda da pizza:"));
-    //var entraNomePizza = prompt ("Insira qual o nome da Pizza:");
-    //var imposto = 8.9;
+    function calculaTudo (entraValorPizza, entraCustoPizza, entraNomePizza)
+    {
+        var imposto = (entraValorPizza * 8.9) / 100
+        var lucro = entraValorPizza - (entraCustoPizza + imposto)
+        mostra(" Para a pizza " + entraNomePizza + " o lucro líquido é de R$ " + lucro.toFixed(2) + " e o imposto é de R$ " + imposto.toFixed(2));
+    }
 
-    //mostra(" Para a pizza " + entraNomePizza + " o lucro líquido é de R$ " + calculaLucro + " e o imposto é de " + calculaImposto);
-        
-        mostra("Não consegui fazer a calculadora da Pizzaria Resilia funcionar! :(")
+    calculaTudo (entraValorPizza, entraCustoPizza, entraNomePizza);
+         
 </script>
